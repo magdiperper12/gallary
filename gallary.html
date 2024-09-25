@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js gallary</title>
+    <link rel="icon" type="image/x-icon" href="image/liio.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="row">
+        <div class="col-6 icon-head" style="padding-left: 20px;">
+            <span id="count">12</span>
+            <span>/</span>
+            <span>16</span>
+        </div>
+        <div class="col-6 icon-head" style="text-align: right;">
+            <div>
+                <span> <a href="align.html" target="_blank" style="text-decoration: none;color: rgb(174, 187, 195);"><i
+                            class="fa-solid fa-share-nodes" title="share"></i></a></span>
+                <span> <i class="fa-solid fa-rotate-left" title="rotate-left" onclick="roteright()"></i></span>
+                <span> <i class="fa-solid fa-rotate-right" title="rotate-right" onclick="rotleft()"></i></span>
+                <span> <i class="fa-solid fa-right-left" title="right-left" onclick="exleftright()"></i></span>
+                <span> <i class="fa-solid fa-up-down" title="right-left" onclick="exupdown()"></i></span>
+                <span><i class="fa-regular fa-circle-play" title="play"></i>
+                </span>
+                <span><i class="fa-solid fa-magnifying-glass-plus" title="focus"></i></span>
+                <span><i class="fa-solid fa-download" title="download" onclick="downloadImage()"></i></span>
+                <span onclick="x()"><i class="fa-solid fa-xmark" title="block"></i></span>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main class="row">
+        <div class="col-2 tran" style="visibility: hidden;" onclick="turn()"><i class="fa-solid fa-chevron-left"></i>
+        </div>
+
+        <div class="col-8 row">
+            <img src="image/photo-14u.avif" class="col-3" alt="Image 1" onclick="showImage(1)">
+            <img src="image/photo-1.avif" class="col-3" alt="Image 2" onclick="showImage(2)">
+            <img src="image/mi2.avif" class="col-3" alt="Image 3" onclick="showImage(3)">
+            <img src="image/ni.jpg" class="col-3" alt="Image 1" onclick="showImage(4)">
+            <img src="image/mi.avif" class="col-3" alt="Image 2" onclick="showImage(5)">
+            <img src="image/photo-15154.avif" class="col-3" alt="Image 3" onclick="showImage(6)">
+            <img src="image/photo-1.avif" class="col-3" alt="Image 1" onclick="showImage(7)">
+            <img src="image/photo-158.avif" class="col-3" alt="Image 2" onclick="showImage(8)">
+            <img src="image/image112.avif" class="col-3" alt="Image 3" onclick="showImage(9)">
+            <img src="image/mi.avif" class="col-3" alt="Image 1" onclick="showImage(10)">
+            <img src="image/mi2.avif" class="col-3" alt="Image 1" onclick="showImage(11)">
+            <img src="image/mi4.avif" class="col-3" alt="Image 2" onclick="showImage(12)">
+            <img src="image/mi3.avif" class="col-3" alt="Image 3" onclick="showImage(13)">
+            <img src="image/image112.avif" class="col-3" alt="Image 1" onclick="showImage(14)">
+            <img src="image/mont.avif" class="col-3" alt="Image 2" onclick="showImage(15)">
+            <img src="image/mont1.avif" class="col-3" alt="Image 3" onclick="showImage(16)">
+
+        </div>
+        <div class="col-2 tran" style="visibility: hidden" onclick="go()"><i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </main>
+
+
+
+    <footer class="row">
+        <img src="image/photo-14u.avif" class="col-1" alt="Image 1" onclick="showImage(1)">
+        <img src="image/photo-1.avif" class="col-1" alt="Image 2" onclick="showImage(2)">
+        <img src="image/mi2.avif" class="col-1" alt="Image 3" onclick="showImage(3)">
+        <img src="image/ni.jpg" class="col-1" alt="Image 1" onclick="showImage(4)">
+        <img src="image/mi.avif" class="col-1" alt="Image 2" onclick="showImage(5)">
+        <img src="image/photo-15154.avif" class="col-1" alt="Image 3" onclick="showImage(6)">
+        <img src="image/photo-1.avif" class="col-1" alt="Image 1" onclick="showImage(7)">
+        <img src="image/photo-158.avif" class="col-1" alt="Image 2" onclick="showImage(8)">
+        <img src="image/image112.avif" class="col-1" alt="Image 3" onclick="showImage(9)">
+        <img src="image/mi.avif" class="col-1" alt="Image 1" onclick="showImage(10)">
+        <img src="image/mi2.avif" class="col-1" alt="Image 1" onclick="showImage(11)">
+        <img src="image/mi4.avif" class="col-1" alt="Image 2" onclick="showImage(12)">
+        <img src="image/mi3.avif" class="col-1" alt="Image 3" onclick="showImage(13)">
+        <img src="image/image112.avif" class="col-1" alt="Image 1" onclick="showImage(14)">
+        <img src="image/mont.avif" class="col-1" alt="Image 2" onclick="showImage(15)">
+        <img src="image/mont1.avif" class="col-1" alt="Image 3" onclick="showImage(16)">
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script>
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
